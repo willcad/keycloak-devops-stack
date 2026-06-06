@@ -1,1 +1,15 @@
+services:
 
+  keycloak:
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 2G
+
+  postgres:
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1G
